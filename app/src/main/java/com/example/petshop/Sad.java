@@ -3,14 +3,12 @@ package com.example.petshop;
 import java.util.Date;
 
 public class Sad extends Mood {
-    public Sad(String name) {
-        super(name);
+    public Sad() {
+        super();
     }
-
-    public Sad(String name, Date moodDate) {
-        super(name, moodDate);
+    public Sad(Date moodDate) {
+        super(moodDate);
     }
-
     @Override
     public String speak() {
         return "Sad";

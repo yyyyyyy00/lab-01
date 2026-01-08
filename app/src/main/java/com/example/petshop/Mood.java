@@ -3,23 +3,13 @@ package com.example.petshop;
 import java.util.Date;
 
 public abstract class Mood {
-    private String name;
     private Date moodDate;
 
-    public Mood(String name) {
-        this.name = name;
+    public Mood() {
+        this.moodDate = new Date();
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Mood(String name, Date moodDate) {
-        this.name = name;
+    public Mood(Date moodDate) {
         this.moodDate = moodDate;
     }
 

@@ -37,5 +37,12 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Pettable> pettablePets = new ArrayList<Pettable>();
         pettablePets.add(cat);
         pettablePets.add(dog);
+
+        Happy happy = new Happy();
+        Sad sad = new Sad();
+        ArrayList<Mood> moodList = new ArrayList<Mood>();
+        moodList.add(happy);
+        moodList.add(sad);
+
     }
 }
